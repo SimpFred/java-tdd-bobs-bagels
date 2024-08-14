@@ -9,7 +9,7 @@
 |          | `private int currentBasketCapacity`          |                             | Basket is not ful                                    | Return false                                                              |
 |          | `private final int BAGEL_PRICE`              |                             |                                                      |                                                                           |
 |          | `private final int SIZE_TO_INCREMENT_BASKET` | `remove(String bagel)`      | Bagel is in the bagel list                           | Remove bagel from basket, decrement currentBasketCapacity and return true |
-|          |                                              |                             | Bagel is not the list                                | Write rejection message to consol and return false                        |
+|          |                                              |                             | Bagel is not in the basket                           | Write rejection message to console and return false                       |
 |          |                                              |                             |                                                      |                                                                           |
 |          |                                              |                             |                                                      |                                                                           |
 |          |                                              | `ìncrementBasketCapacity()` | Increment the basket capacity                        | Write confirmation message to console                                     |
