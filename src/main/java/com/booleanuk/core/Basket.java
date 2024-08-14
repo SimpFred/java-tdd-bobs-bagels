@@ -18,7 +18,7 @@ public class Basket {
     }
 
     public boolean removeItem(String item) {
-        if (item.isEmpty()) {
+        if (item.isEmpty() || !bagels.contains(item)) {
             return false;
         }
         return true;
