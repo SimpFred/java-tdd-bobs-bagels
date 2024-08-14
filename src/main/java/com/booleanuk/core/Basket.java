@@ -18,7 +18,10 @@ public class Basket {
     }
 
     public boolean removeItem(String item) {
-        return false;
+        if (item.isEmpty()) {
+            return false;
+        }
+        return true;
     }
 
 }
