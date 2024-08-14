@@ -17,4 +17,8 @@ public class Basket {
         return true;
     }
 
+    public boolean removeItem(String item) {
+        return false;
+    }
+
 }
