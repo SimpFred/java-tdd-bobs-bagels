@@ -1,5 +1,6 @@
 package com.booleanuk.core;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Basket {
@@ -9,7 +10,7 @@ public class Basket {
 
     public Basket() {
         this.bagels = List.of("bagel1", "bagel2", "bagel3", "bagel4");
-        this.basket = List.of();
+        this.basket = new ArrayList<>();
     }
 
     public boolean addItem(String item) {
@@ -21,7 +22,7 @@ public class Basket {
     }
 
     public boolean removeItem(String item) {
-        if (item.isEmpty() || !bagels.contains(item)) {
+        if (item.isEmpty() || !basket.contains(item)) {
             return false;
         }
         return true;
