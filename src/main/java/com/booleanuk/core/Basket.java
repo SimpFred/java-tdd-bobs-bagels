@@ -8,6 +8,8 @@ public class Basket {
     private final List<String> bagels;
     private List<String> basket;
 
+    private static final int MAX_BAGELS = 5;
+
     public Basket() {
         this.bagels = List.of("bagel1", "bagel2", "bagel3", "bagel4");
         this.basket = new ArrayList<>();
@@ -31,6 +33,9 @@ public class Basket {
     }
 
     public boolean isBasketFull() {
+        if (basket.size() == MAX_BAGELS) {
+            return true;
+        }
         return false;
     }
 
