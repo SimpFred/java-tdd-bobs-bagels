@@ -28,6 +28,7 @@ class BasketTest {
         addBagelsToBasket("bagel1");
         Assertions.assertTrue(basket.removeItem("bagel1"));
         Assertions.assertFalse(basket.removeItem("bagel1"));
+        Assertions.assertFalse(basket.getBasket().contains("bagel1"));
     }
 
     @Test
