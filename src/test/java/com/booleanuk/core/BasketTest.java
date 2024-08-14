@@ -33,4 +33,9 @@ class BasketTest {
         Assertions.assertTrue(basket.addItem("bagel4"));
         Assertions.assertTrue(basket.isBasketFull());
     }
+
+    @Test
+    void testIncrementBasketCapacity() {
+        basket.incrementBasketCapacity();
+    }
 }
