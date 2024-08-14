@@ -34,6 +34,7 @@ public class Basket {
 
     public boolean isBasketFull() {
         if (basket.size() == MAX_BAGELS) {
+            System.out.println("Basket is full");
             return true;
         }
         return false;
