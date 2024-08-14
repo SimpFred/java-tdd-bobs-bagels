@@ -23,9 +23,14 @@ class BasketTest {
         Assertions.assertFalse(basket.removeItem("bagel1"));
     }
 
-   @Test
+    @Test
     void testIsBasketFull() {
         Assertions.assertFalse(basket.isBasketFull());
+        Assertions.assertTrue(basket.addItem("bagel1"));
+        Assertions.assertTrue(basket.addItem("bagel2"));
+        Assertions.assertTrue(basket.addItem("bagel3"));
+        Assertions.assertTrue(basket.addItem("bagel4"));
+        Assertions.assertTrue(basket.addItem("bagel4"));
         Assertions.assertTrue(basket.isBasketFull());
     }
 }
