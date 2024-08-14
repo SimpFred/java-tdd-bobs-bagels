@@ -4,7 +4,10 @@ public class Basket {
 
 
     public boolean addItem(String item) {
-        return false;
+        if (item.isEmpty()) {
+            return false;
+        }
+        return true;
     }
 
 }
