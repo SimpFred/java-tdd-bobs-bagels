@@ -6,7 +6,7 @@ import java.util.List;
 public class Basket {
 
     private final List<String> bagels;
-    private List<String> basket;
+    private final List<String> basket;
 
     private int maxBasketCapacity = 5;
     private static final int SIZE_TO_INCREMENT_BASKET = 5;
