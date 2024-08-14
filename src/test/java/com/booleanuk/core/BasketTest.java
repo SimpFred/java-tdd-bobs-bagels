@@ -22,4 +22,9 @@ class BasketTest {
         Assertions.assertTrue(basket.removeItem("bagel1"));
         Assertions.assertFalse(basket.removeItem("bagel1"));
     }
+
+   @Test
+    void testIsBasketFull() {
+        Assertions.assertFalse(basket.isBasketFull());
+    }
 }
