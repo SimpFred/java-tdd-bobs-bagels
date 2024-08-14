@@ -7,6 +7,12 @@ class BasketTest {
 
     private final Basket basket = new Basket();
 
+    private void addBagelsToBasket(String... bagels) {
+        for (String bagel : bagels) {
+            basket.addItem(bagel);
+        }
+    }
+
     @Test
     void testAddItem() {
         Assertions.assertFalse(basket.addItem(""));
@@ -18,7 +24,7 @@ class BasketTest {
     @Test
     void testRemoveItem() {
         Assertions.assertFalse(basket.removeItem(""));
-        Assertions.assertTrue(basket.addItem("bagel1"));
+        addBagelsToBasket("bagel1");
         Assertions.assertTrue(basket.removeItem("bagel1"));
         Assertions.assertFalse(basket.removeItem("bagel1"));
     }
@@ -26,11 +32,7 @@ class BasketTest {
     @Test
     void testIsBasketFull() {
         Assertions.assertFalse(basket.isBasketFull());
-        Assertions.assertTrue(basket.addItem("bagel1"));
-        Assertions.assertTrue(basket.addItem("bagel2"));
-        Assertions.assertTrue(basket.addItem("bagel3"));
-        Assertions.assertTrue(basket.addItem("bagel4"));
-        Assertions.assertTrue(basket.addItem("bagel4"));
+        addBagelsToBasket("bagel1", "bagel2", "bagel3", "bagel4", "bagel4");
         Assertions.assertTrue(basket.isBasketFull());
     }
 
