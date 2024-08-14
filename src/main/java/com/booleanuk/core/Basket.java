@@ -25,6 +25,7 @@ public class Basket {
         if (item.isEmpty() || !basket.contains(item)) {
             return false;
         }
+        basket.remove(item);
         return true;
     }
 
