@@ -30,4 +30,8 @@ public class Basket {
         return true;
     }
 
+    public boolean isBasketFull() {
+        return false;
+    }
+
 }
