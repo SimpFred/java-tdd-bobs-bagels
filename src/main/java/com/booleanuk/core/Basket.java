@@ -23,6 +23,7 @@ public class Basket {
 
     public boolean removeItem(String item) {
         if (item.isEmpty() || !basket.contains(item)) {
+            System.out.println("Bagel is not in the basket");
             return false;
         }
         basket.remove(item);
