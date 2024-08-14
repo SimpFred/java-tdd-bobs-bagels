@@ -8,7 +8,8 @@ public class Basket {
     private final List<String> bagels;
     private List<String> basket;
 
-    private static final int MAX_BAGELS = 5;
+    private int maxBagels = 5;
+    private static final int SIZE_TO_INCREMENT_BASKET = 5;
 
     public Basket() {
         this.bagels = List.of("bagel1", "bagel2", "bagel3", "bagel4");
@@ -33,11 +34,16 @@ public class Basket {
     }
 
     public boolean isBasketFull() {
-        if (basket.size() == MAX_BAGELS) {
+        if (basket.size() == maxBagels) {
             System.out.println("Basket is full");
             return true;
         }
         return false;
+    }
+
+    public void incrementBasketCapacity() {
+        System.out.println("Basket capacity increased");
+        maxBagels += SIZE_TO_INCREMENT_BASKET;
     }
 
 }
