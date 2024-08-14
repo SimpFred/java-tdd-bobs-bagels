@@ -26,5 +26,6 @@ class BasketTest {
    @Test
     void testIsBasketFull() {
         Assertions.assertFalse(basket.isBasketFull());
+        Assertions.assertTrue(basket.isBasketFull());
     }
 }
