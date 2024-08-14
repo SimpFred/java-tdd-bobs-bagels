@@ -1,0 +1,16 @@
+
+| Classes  | Variables                                    | Methods                     | Scenario                                             | Outcomes                                                                  |
+|----------|----------------------------------------------|-----------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
+| `Basket` | `private List<String> basket`                | `add(String bagel)`         | Bagel is in the bagel list and the basket is not ful | Add bagel to basket, increment the currentBasketCapacity and return true  |
+|          | `private List<String> bagels`                |                             | Bagel is not the list                                | Return false                                                              |
+|          |                                              |                             | Basket is ful                                        | Return false                                                              |
+|          |                                              |                             |                                                      |                                                                           |
+|          | `private int maxBasketCapacity`              | `isBasketFull()`            | Basket is ful                                        | Write message to console and return true                                  |
+|          | `private int currentBasketCapacity`          |                             | Basket is not ful                                    | Return false                                                              |
+|          | `private final int BAGEL_PRICE`              |                             |                                                      |                                                                           |
+|          | `private final int SIZE_TO_INCREMENT_BASKET` | `remove(String bagel)`      | Bagel is in the bagel list                           | Remove bagel from basket, decrement currentBasketCapacity and return true |
+|          |                                              |                             | Bagel is not the list                                | Write rejection message to consol and return false                        |
+|          |                                              |                             |                                                      |                                                                           |
+|          |                                              |                             |                                                      |                                                                           |
+|          |                                              | `ìncrementBasketCapacity()` | Increment the basket capacity                        | Write confirmation message to console                                     |
+|          |                                              |                             |                                                      |                                                                           |
