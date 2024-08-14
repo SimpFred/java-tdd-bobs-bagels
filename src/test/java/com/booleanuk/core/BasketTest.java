@@ -19,6 +19,7 @@ class BasketTest {
         Assertions.assertTrue(basket.addItem("bagel1"));
         Assertions.assertFalse(basket.addItem("bagelThatNotExists"));
         Assertions.assertTrue(basket.addItem("bagel4"));
+        Assertions.assertTrue(basket.getbasket().contains("bagel4"));
     }
 
     @Test
