@@ -46,4 +46,8 @@ public class Basket {
         maxBasketCapacity += SIZE_TO_INCREMENT_BASKET;
     }
 
+    public List<String> getBasket() {
+        return basket;
+    }
+
 }
