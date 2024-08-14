@@ -5,11 +5,12 @@ import org.junit.jupiter.api.Test;
 
 class BasketTest {
 
-    private Basket basket   = new Basket();
+    private final Basket basket   = new Basket();
 
     @Test
     void testAddItem() {
         Assertions.assertFalse(basket.addItem(""));
+        Assertions.assertTrue(basket.addItem("item"));
     }
 
 }
